@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to our Movie Recommender!</h1> 
+
+    <div id="form">
+        <p>Enter you favorite movies :-) </p>
+        <form action="{{url_for('recommender')  }}">
+            {% for i in range(5) %}
+            <input type="text" name="movie">
+            <br>
+            <br>
+            {% endfor %}
+
+            <label for="choice">Choose a category:</label>            
+            <select name="choice" id="choice">
+                <option value="Random">Random</option>
+                <option value="Tailored">Tailored</option>
+                <option value="people like you">people like you</option>
+                <option value="popular">popular</option>
+            </select>
+        
+            <!-- <button type="submit" value="nmf" name="model">Run with NMF</button>
+            <button type="submit" value="volvo" name="model">Run with Volvo</button> -->
+        
+            <input type="submit">
+        </form>
+
+      
+
+    </div> 
+
+    
+{% endblock %}
+

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Here is some movie info:</h1>
+<h3>movie title: {{ movie['title'] }} </h3>
+<h3>genre: {{ movie['genres'] }} </h3>
+<img src="https://d19o3rvvi2wlie.cloudfront.net/{{movieId}}.jpg", alt="a poster of the movie">
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- Here is how to make comments in html -->
+
+<h3>You have picked the option --- {{choice}}</h3>
+<h1>Here are some recommendations:</h1>
+<!-- the code below is jinja and renders 
+    the variable passed from application.py -->
+<ul>
+{% for index in recs.index %}
+    <li><a href="{{url_for('movie_info', movieId=index)}}">{{recs.loc[index][0]}}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}

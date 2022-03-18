@@ -1,0 +1,23 @@
+h1 {
+    color: rgb(12, 96, 221);
+    font-size: 4em;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+#container {
+    max-width: 900px;
+    margin: auto;
+}
+
+#form {
+    width: 60%;
+    margin-left: 10%;
+    /* background-color: black; */
+}
+
+#form form {
+    width: 100%;
+}
