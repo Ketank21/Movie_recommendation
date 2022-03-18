@@ -15,5 +15,5 @@
 	- Flask requires the html and css file to also placed in the same folder
 	- A version of the app is uploaded on streamlit although some functionalities are not working and the app is very slow. However the app works on local computer. 
 	
-	- https://share.streamlit.io/ketank21/movie_recommnder/main/movieapp/mov_rec_app.py
+	- https://share.streamlit.io/ketank21/movie_recommendation/main/movieapp/mov_rec_app.py
 	
